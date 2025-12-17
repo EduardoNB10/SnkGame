@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Snake Clásico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="scoreboard">Puntos: <span id="score">0</span></div>
+        <canvas id="snakeGame" width="400" height="400"></canvas>
+
+        <div class="controls">
+            <div class="row">
+                <button class="btn btn-pause" id="pauseBtn">PAUSA</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-dir" onclick="changeDir('UP')">▲</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-dir" onclick="changeDir('LEFT')">◀</button>
+                <button class="btn btn-dir" onclick="changeDir('DOWN')">▼</button>
+                <button class="btn btn-dir" onclick="changeDir('RIGHT')">▶</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
